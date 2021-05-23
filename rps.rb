@@ -30,7 +30,8 @@ def janken
             puts "--------------"
             puts "あいこで..."
             puts "0(グー)1(チョキ)2(パー)3(戦わない)"
-            @my_choice = gets.chomp.to_i 
+            @my_choice = gets.chomp.to_i
+            @opponent_choice = rand(3)
             redo
         elsif @my_choice == 3
             puts "戦うのをやめました。"
